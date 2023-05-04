@@ -46,6 +46,11 @@ public class PutContoller {
         return memberDto;
     }
     //RestController 어노테이션이 지정된 클래스는 ResponseBody를 생략할 수 있는데 이 ResponseBody는 자동으로 JSOSN으로 변환해줌
+
+    @PutMapping(value = "/member3")
+    public String postMemberDTO3(@RequestBody MemberDto memberDto){
+        return memberDto.toString();
+    }
 }
 
 
